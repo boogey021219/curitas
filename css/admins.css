@@ -1,0 +1,45 @@
+.icon-box {
+    position: relative;
+    padding: 20px;
+    background: var(--surface-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.icon-box:hover {
+    background-color: var(--bs-light);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px) scale(1.05);
+    border-color: var(--bs-primary);
+}
+
+.icon-box .icon {
+    font-size: 2.5rem;
+    color: var(--bs-primary);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon-box:hover .icon {
+    color: var(--bs-dark);
+    transform: scale(1.1);
+}
+
+.icon-box .title {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--bs-dark);
+}
+
+.icon-box .title a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.icon-box .title a:hover {
+    color: var(--bs-primary);
+}

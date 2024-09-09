@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="css/LogU.css">
+<title>Register Curitas EPS</title>
+</head>
+<body class="body2">
+    <div class="container mt-5">
+        <div class="card mx-auto" style="max-width: 900px;">
+            <div class="row no-gutters">
+                <!-- Left Side: Image and Text -->
+                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                    <div class="text-center">
+                        <img class="user img-fluid" src="https://i.ibb.co/yVGxFPR/2.png" alt="User Image">
+                        <h3 class="mt-3">¡Eres Nuevo, Registrate Aqui!</h3>
+                    </div>
+                </div>
+                <!-- Right Side: Form -->
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <form action="registerAdmin.jsp" method="post">
+                            
+                            <div class="form-group">
+                                <input id="nombre" class="form-control" type="text" name="nombre" placeholder="Nombre Completo" required>
+                            </div>
+                            <div class="form-group">
+                                <select id="tipo_de_documento" class="form-control" name="tipo_de_documento" required>
+                                    <option value="NA" disabled selected>Tipo de Documento</option>
+                                    <option value="TI">Tarjeta de Identidad (TI)</option>
+                                    <option value="CC">Cédula de Ciudadanía (CC)</option>
+                                    <option value="CE">Cédula de Extranjería (CE)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input id="id" class="form-control" type="text" name="id" placeholder="Documento" required>
+                            </div>
+                            <div class="form-group">
+                                <input id="cargo" class="form-control" type="text" name="cargo" placeholder="Cargo" required>
+                            </div>
+                            <div class="form-group">
+                                <select id="genero" class="form-control" name="genero" required>
+                                    <option value="" disabled selected>Género</option>
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Femenino">Femenino</option>
+                                    <option value="Otro">Otro</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input id="fecha_de_nacimiento" class="form-control" type="date" name="fecha_de_nacimiento" placeholder="Fecha de Nacimiento" required>
+                            </div>
+                            <div class="form-group">
+                                <input id="email" class="form-control" type="text" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input id="passwd" class="form-control" type="password" name="passwd" placeholder="Contraseña" required>
+                            </div>
+                            <div class="form-group">
+                                <input id="confirmar_paswd" class="form-control" type="password" name="confirmar_paswd" placeholder="Confirmar Contraseña" required>
+                            </div>
+                            <div class="form-group">
+                                <input id="departamento_area" class="form-control" type="text" name="departamento_area" placeholder="Departamento/Área" required>
+                            </div>
+                            <div class="form-group">
+                                <input id="fecha_inicio" class="form-control" type="date" name="fecha_inicio" placeholder="Fecha de Inicio" required>
+                            </div>
+                            <div class="form-group">
+                                <input id="horas_trabajo" class="form-control" type="number" name="horas_trabajo" placeholder="Horas de Trabajo" required>
+                            </div>
+                            <div class="form-group">
+                                <select id="tipo_contrato" class="form-control" name="tipo_contrato" required>
+                                    <option value="NA" disabled selected>Tipo de contrato</option>
+                                    <option value="Masculino">Indefinido</option>
+                                    <option value="Femenino">Definido</option>
+                                    <option value="Otro">Otro</option>
+                                </select>
+                            </div>
+                            <input type="submit" name="submit" value="Registrarse" class="btn btn-primary btn-block">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+<!-- 
+la fokin bd
+
+Class.forName("com.mysql.jdbc.Driver");
+
+                // Establecer la conexión
+                conexion = DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/curitas",
+                    "root",
+                    "");
+
+
+-->
